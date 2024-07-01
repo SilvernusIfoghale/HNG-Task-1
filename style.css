@@ -36,13 +36,31 @@ section {
 h1,
 h2 {
   color: #333;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgb(237, 237, 237);
 }
 
-ul {
+ul,
+ol {
   list-style: none;
+  counter-reset: myList;
   padding: 0;
   margin: 0;
+}
+
+ul li::before {
+  content: counter(myList) "";
+  counter-increment: myList;
+  background-color: #79b6ec;
+  width: 20px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  margin-right: 7px;
+  text-align: center;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
 }
 
 li {
