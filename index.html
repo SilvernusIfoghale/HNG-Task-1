@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front-end Developer's Goals</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="imgContainer" data-testid="imgContainer">
+        <img
+          src="Image/profile.jpg"
+          alt="Slack Profile Picture"
+          data-testid="slackProfilePicture"
+          width="auto"
+          height="auto"
+        />
+      </div>
+
+      <!-- <h1>Silvernus Ifoghale</h1> -->
+      <p data-testid="slackDisplayName">Slack Name: Silvernus Ifoghale</p>
+      <p data-testid="slackEmail">
+        Slack Email:
+        <a href="mailto:silvernusorevaoghene@gamil.com"
+          >silvernusorevaoghene@gamil.com</a
+        >
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Current Time and Day</h2>
+        <p data-testid="currentTimeUTC">
+          Current Time: <span id="currentTime"></span> WAT
+        </p>
+        <p data-testid="currentDay">
+          Current Day: <span id="currentDay"></span>
+        </p>
+      </section>
+      <section>
+        <h2 data-testid="GoalsfortheNext2Years">Goals for the Next 2 Years</h2>
+        <ul>
+          <li data-testid="firstGoal">
+            Improve proficiency in HTML, CSS, and JavaScript
+          </li>
+          <li data-testid="secondGoal">
+            Learn React and build complex applications
+          </li>
+          <li data-testid="thirdGoal">Master CSS Grid and Flexbox</li>
+          <li data-testid="forthGoal">
+            Build a personal project and deploy it to a live server
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 data-testid="UsefulResourcesLinks">Useful Resources</h2>
+        <ul>
+          <li>
+            <a href="https://hng.tech/learn" data-testid="hngLink"
+              >HNG Tech Learn</a
+            >
+          </li>
+          <li>
+            <a href="https://scrapeanywebsite.com" data-testid="scrapanywebLink"
+              >Scrape Any Website</a
+            >
+          </li>
+          <li>
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword Dog</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js" data-testid="scriptLink"></script>
+  </body>
+</html>
